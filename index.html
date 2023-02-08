@@ -56,73 +56,74 @@
             <p class="subsection">
                 The basics about HTML
             </p>
-            <h3>HyperText Markup Language</h3>
-            <p>
-                When we talk about HTML we’re talking about a Text Document.
-            </p>
-            <p class="callout">&#128161; The tags <code>&lt;body&gt;</code>, <code>&lt;html&gt;</code> and
-                <code>&lt;head&gt;</code> are optional tags in HTML5. It's a common
-                practice cause it used to be mandatory and it ended becoming a stardard practice, but it's not
-                necessary.
-                <a href="https://google.github.io/styleguide/htmlcssguide.html#Optional_Tags" target="_blank"
-                    title="Reference about optional tags">https://google.github.io/styleguide/htmlcssguide.html#Optional_Tags</a>
-            </p>
-            <p class="callout">
-                &#128161; Agent - Something that acts on someone else’s behalf<br>
-                User agent - Software that acts on the user’s behalf
-            </p>
-
-            <h4>Markup</h4>
-            <p>
-                We use <strong>tags</strong> (start and end tag) to tell the computer what that line means. It’s a
-                friendly user agent’s (and easy for
-                humans to read) way to markup the document. You’re adding<strong> meaning</strong> to the document.
-            </p>
-            <pre>
-                <code>
-                    &lt;h1&gt;My name is Fernanda&lt;/h1&gt; //you're saying to the computer that this is the MOST important part of the
-            document
-        </code>
-        </pre>
-
-            <h4>Language</h4>
-            <p>
-                We need a <strong>markup language</strong> because if we don’t have one each person will mark the
-                document in a unique way, making it
-                impossible for the user agent to know what each person means. That’s why it was created a language so we
-                have a:
-            </p>
-            <ul>
-                <li>Consistent vocabulary</li>
-                <li>Can convey meaning clearly</li>
-                <li>Exists to facilitate communication</li>
-                <li>When learning, can go to a dictionary and look it up</li>
-            </ul>
-            <p class="callout">
-                &#128161;It’s all about consistent meaning
-            </p>
-            <p class="callout">
-                &#128161; Semantic - Having to do with meaning
-            </p>
-            <p>Writing with HTML isn’t just about writing a document, but <strong>adding meaning to it</strong>.
-                <br>
-                Besides the <strong>meaning</strong>, other pieces of information or instructions are called
-                <strong>attributes</strong>.
-            </p>
-            <pre>
-                <code>
-                    &lt;name type=&quot;first&quot; nickname=&quot;true&quot;&gt;Fernanda&lt;/name&gt; //Element
-                </code>
-            </pre>
-            <p class="callout">
-                &#128161; Nested - Placed inside something else
-            </p>
-            <p class="callout">
-                &#128161; Specification - A standard of precise requirements. We can just call it “spec”
-            </p>
-            <p class="callout">
-                &#128161; Metadata - A set of data that provides information about other data
-            </p>
+            <div>
+                <h3>HyperText Markup Language</h3>
+                <p>
+                    When we talk about HTML we’re talking about a Text Document.
+                </p>
+                <p class="callout">&#128161; The tags <code>&lt;body&gt;</code>, <code>&lt;html&gt;</code> and
+                    <code>&lt;head&gt;</code> are optional tags in HTML5. It's a common
+                    practice cause it used to be mandatory and it ended becoming a stardard practice, but it's not
+                    necessary.
+                    <a href="https://google.github.io/styleguide/htmlcssguide.html#Optional_Tags" target="_blank"
+                        title="Reference about optional tags">https://google.github.io/styleguide/htmlcssguide.html#Optional_Tags</a>
+                </p>
+                <p class="callout">
+                    &#128161; Agent - Something that acts on someone else’s behalf<br>
+                    User agent - Software that acts on the user’s behalf
+                </p>
+                <h4>Markup</h4>
+                <p>
+                    We use <strong>tags</strong> (start and end tag) to tell the computer what that line means. It’s a
+                    friendly user agent’s (and easy for
+                    humans to read) way to markup the document. You’re adding<strong> meaning</strong> to the document.
+                </p>
+                <pre>
+                    <code>
+                        &lt;h1&gt;My name is Fernanda&lt;/h1&gt; //you're saying to the computer that this is the MOST important part of the
+                document
+                        </code>
+                        </pre>
+                <h4>Language</h4>
+                <p>
+                    We need a <strong>markup language</strong> because if we don’t have one each person will mark the
+                    document in a unique way, making it
+                    impossible for the user agent to know what each person means. That’s why it was created a language
+                    so we
+                    have a:
+                </p>
+                <ul>
+                    <li>Consistent vocabulary</li>
+                    <li>Can convey meaning clearly</li>
+                    <li>Exists to facilitate communication</li>
+                    <li>When learning, can go to a dictionary and look it up</li>
+                </ul>
+                <p class="callout">
+                    &#128161;It’s all about consistent meaning
+                </p>
+                <p class="callout">
+                    &#128161; Semantic - Having to do with meaning
+                </p>
+                <p>Writing with HTML isn’t just about writing a document, but <strong>adding meaning to it</strong>.
+                    <br>
+                    Besides the <strong>meaning</strong>, other pieces of information or instructions are called
+                    <strong>attributes</strong>.
+                </p>
+                <pre>
+                    <code>
+                        &lt;name type=&quot;first&quot; nickname=&quot;true&quot;&gt;Fernanda&lt;/name&gt; //Element
+                    </code>
+                </pre>
+                <p class="callout">
+                    &#128161; Nested - Placed inside something else
+                </p>
+                <p class="callout">
+                    &#128161; Specification - A standard of precise requirements. We can just call it “spec”
+                </p>
+                <p class="callout">
+                    &#128161; Metadata - A set of data that provides information about other data
+                </p>
+            </div>
         </section>
 
         <section>
@@ -130,42 +131,45 @@
             <p class="subsection">
                 Basic elements structure that most HTML documents have
             </p>
-            <h3>Metadata</h3>
-            <p>
-                The metadata in a HTML document should be inside the <strong>head</strong> element.
-            </p>
-            <p class="callout">
-                &#128161; The head element represents a collection of metadata for the Document
-            </p>
-            <p>
-                It can be a number of different metadata, but the most commom ones are:
-            </p>
-            <h4>Title</h4>
-            <p>
-                The title of the document must be explanatory in itself, because it can appear isolated or out of
-                context, such as in a
-                favorite bar, history or google search.
-            </p>
-            <p class="callout">
-                &#128161; Should be different from its first heading, since the h1 doest not have to stand alone when
-                taken out of context
-            </p>
-
-            <h4>Charset</h4>
-            <p>
-                A standard way to start a HTML Document is having the charset and the title defined.
-            </p>
-            <p class="callout">
-                &#128161; CHARACTER SET - A set of supported characters (numbers, letters, symbols). UTF-8 covers almost
-                everything in every
-                language
-            </p>
-
-            <h4>Content</h4>
-            <p>
-                The body element comes after the head element and it’ll have all the content of the document, everything
-                that the user will be able to see
-            </p>
+            <div>
+                <h3>Metadata</h3>
+                <p>
+                    The metadata in a HTML document should be inside the <strong>head</strong> element.
+                </p>
+                <p class="callout">
+                    &#128161; The head element represents a collection of metadata for the Document
+                </p>
+                <p>
+                    It can be a number of different metadata, but the most commom ones are:
+                </p>
+                <h4>Title</h4>
+                <p>
+                    The title of the document must be explanatory in itself, because it can appear isolated or out of
+                    context, such as in a
+                    favorite bar, history or google search.
+                </p>
+                <p class="callout">
+                    &#128161; Should be different from its first heading, since the h1 doest not have to stand alone
+                    when
+                    taken out of context
+                </p>
+                <h4>Charset</h4>
+                <p>
+                    A standard way to start a HTML Document is having the charset and the title defined.
+                </p>
+                <p class="callout">
+                    &#128161; CHARACTER SET - A set of supported characters (numbers, letters, symbols). UTF-8 covers
+                    almost
+                    everything in every
+                    language
+                </p>
+                <h4>Content</h4>
+                <p>
+                    The body element comes after the head element and it’ll have all the content of the document,
+                    everything
+                    that the user will be able to see
+                </p>
+            </div>
         </section>
 
         <section>
@@ -180,111 +184,123 @@
                 <img src="./img/img03.png" alt="a html tree highlighing a section">
             </picture>
 
-            <h3>Self-Contained Composition</h3>
-            <h4>The <strong>Article</strong> Element</h4>
-            <p>
-                The Article Element represents a <strong>complete, or self-contained, composition</strong> in a
-                document, page, application, or site and that’s, in principle,independently distributable or reusable
-                (you can take that element to another place (another site, etc) and it will still make sense in itself).
-                <strong>It’s self-contained</strong>
-            </p>
-            <p>It falls into 3 main categories:</p>
-            <ol>
-                <li>Is a flow element - essentially the document flowing from top to bottom</li>
-                <li>Is a sectioning element - Is a content that defines the scope of the outline, potentially has a
-                    heading and a outline.</li>
-                <li>Is a palpable content - It’s expected, generally, that there’s something inside the element.
-                    There’ll be other elements
-                    inside of it.</li>
-            </ol>
-            <p class="callout">
-                &#128161; Inside the article element it can have any kind of flow content
-            </p>
+            <div>
+                <h3>Self-Contained Composition</h3>
+                <h4>The <strong>Article</strong> Element</h4>
+                <p>
+                    The Article Element represents a <strong>complete, or self-contained, composition</strong> in a
+                    document, page, application, or site and that’s, in principle,independently distributable or
+                    reusable
+                    (you can take that element to another place (another site, etc) and it will still make sense in
+                    itself).
+                    <strong>It’s self-contained</strong>
+                </p>
+                <p>It falls into 3 main categories:</p>
+                <ol>
+                    <li>Is a flow element - essentially the document flowing from top to bottom</li>
+                    <li>Is a sectioning element - Is a content that defines the scope of the outline, potentially has a
+                        heading and a outline.</li>
+                    <li>Is a palpable content - It’s expected, generally, that there’s something inside the element.
+                        There’ll be other elements
+                        inside of it.</li>
+                </ol>
+                <p class="callout">
+                    &#128161; Inside the article element it can have any kind of flow content
+                </p>
+                <h4>The <strong>Section</strong> Element</h4>
+                <h5>Thematic Grouping</h5>
+                <p>Represents a generic section of a document. In this context, is a thematic grouping of content,
+                    typically
+                    with a heading
+                    <br>
+                    Everything inside the element <strong>section</strong> must be intertwined, connected.
+                </p>
+                <h4>The Aside Element</h4>
+                <h5>Tangential Content</h5>
+                <p>
+                    Represents a section of a page that consists of content that is <strong>tangentially
+                        related</strong> to
+                    the content around the aside element, and which could be considered separate from that content. Such
+                    sections are often represented as sidebars in printed typography.
+                </p>
+                <p class="callout">
+                    &#128161; It's important to <strong>NOT</strong> think about the aside element as something visual.
+                    When
+                    you're
+                    authoring a HTML document you must do it in a future proof way, as in you don't know if one day this
+                    document will be read out load or printed, so the tags must be placed as a way to markup something,
+                    regardless of where it will appear in the page.
+                </p>
+                <pre>
+                    <code>
+                        &lt;p&gt;
+                        My name is Fernanda and I'm learning how to author a HTML Document. <code>&lt;aside&gt;</code>I have two dogs, named Lupin and
+                        Jager&lt;/aside&gt;
+                        &lt;/p&gt;
+                    </code>
+                </pre>
+                <p class="callout">
+                    The way that we know that it's allowed to have a article or section element inside a section element
+                    is
+                    through the documentation. When we look at the specification of those elements, we see that the
+                    content
+                    model says that it supports flow content and a aside element is a flow content. Therefore, this is
+                    legal/allowed!
+                </p>
+            </div>
 
-            <h4>The <strong>Section</strong> Element</h4>
-            <h5>Thematic Grouping</h5>
-            <p>Represents a generic section of a document. In this context, is a thematic grouping of content, typically
-                with a heading
-                <br>
-                Everything inside the element <strong>section</strong> must be intertwined, connected.
-            </p>
+            <div>
+                <h3>Heading and Rank</h3>
+                <p>
+                    Its content model is <strong>Phrasing</strong>, so it's different from the elements seen above. It
+                    means you can't put a flow element (as aside, article, section etc) inside it.
+                    <br>
+                    These elements have a <strong>rank</strong> given by the number in their name. The
+                    <code>&lt;h1&gt;</code> element has the highest rank, while the <code>&lt;h6&gt;</code> element has
+                    the
+                    lowest rank.
+                </p>
+                <p class="callout">
+                    &#128161; When you have two heading of equal or higher rank, it's implied you're starting a new
+                    section
+                    and when you have a heading of lower rank it's implied that this new heading is a subsection of the
+                    previous one
+                </p>
+                <h3>Headers and Footers</h3>
+                <p>
+                    Its content model is flow content, but with no header or footer
+                </p>
+                <h4>Header</h4>
+                <p>
+                    The <strong>header</strong> element is intended to usually contain the section's heading, but it's
+                    not required. It can also be used to wrap a section's table of contents, a search form, or any
+                    relevant logs.
+                </p>
+                <h4>Footer</h4>
+                <p>
+                    The <strong>footer</strong> element represents a footer for its nearest ancestor sectioning content
+                    or
+                    sectioning root element. Tipically contains information about its section such as who wrote it,
+                    links,
+                    copyright data and the like.
+                </p>
+            </div>
 
-            <h4>The Aside Element</h4>
-            <h5>Tangential Content</h5>
-            <p>
-                Represents a section of a page that consists of content that is <strong>tangentially related</strong> to
-                the content around the aside element, and which could be considered separate from that content. Such
-                sections are often represented as sidebars in printed typography.
-            </p>
-            <p class="callout">
-                &#128161; It's important to <strong>NOT</strong> think about the aside element as something visual. When
-                you're
-                authoring a HTML document you must do it in a future proof way, as in you don't know if one day this
-                document will be read out load or printed, so the tags must be placed as a way to markup something,
-                regardless of where it will appear in the page.
-            </p>
-            <pre>
-                <code>
-                    &lt;p&gt;
-                    My name is Fernanda and I'm learning how to author a HTML Document. <code>&lt;aside&gt;</code>I have two dogs, named Lupin and
-                    Jager&lt;/aside&gt;
-                    &lt;/p&gt;
-                </code>
-            </pre>
-
-            <p class="callout">
-                The way that we know that it's allowed to have a article or section element inside a section element is
-                through the documentation. When we look at the specification of those elements, we see that the content
-                model says that it supports flow content and a aside element is a flow content. Therefore, this is
-                legal/allowed!
-            </p>
-
-            <h3>Heading and Rank</h3>
-            <p>
-                Its content model is <strong>Phrasing</strong>, so it's different from the elements seen above. It
-                means you can't put a flow element (as aside, article, section etc) inside it.
-                <br>
-                These elements have a <strong>rank</strong> given by the number in their name. The
-                <code>&lt;h1&gt;</code> element has the highest rank, while the <code>&lt;h6&gt;</code> element has the
-                lowest rank.
-            </p>
-
-            <p class="callout">
-                &#128161; When you have two heading of equal or higher rank, it's implied you're starting a new section
-                and when you have a heading of lower rank it's implied that this new heading is a subsection of the
-                previous one
-            </p>
-
-            <h3>Headers and Footers</h3>
-            <p>
-                Its content model is flow content, but with no header or footer
-            </p>
-
-            <h4>Header</h4>
-            <p>
-                The <strong>header</strong> element is intended to usually contain the section's heading, but it's
-                not required. It can also be used to wrap a section's table of contents, a search form, or any
-                relevant logs.
-            </p>
-
-            <h4>Footer</h4>
-            <p>
-                The <strong>footer</strong> element represents a footer for its nearest ancestor sectioning content or
-                sectioning root element. Tipically contains information about its section such as who wrote it, links,
-                copyright data and the like.
-            </p>
-
-            <h3>The Address element</h3>
-            <p>
-                Represents the contact information for its nearest article or body <strong>ancestor</strong> - not
-                sibilings. It <strong>must not</strong> be used to represent arbitrary addresses, unless those addresses
-                are in fact relevant contact information.
-            </p>
-            <p>
-                Its content model is also flow content, but with no heading content descendants, no sectioning content
-                descendants and no <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code> or
-                <code>&lt;address&gt;</code> element descendants</code>
-            </p>
+            <div>
+                <h3>The Address element</h3>
+                <p>
+                    Represents the contact information for its nearest article or body <strong>ancestor</strong> - not
+                    sibilings. It <strong>must not</strong> be used to represent arbitrary addresses, unless those
+                    addresses
+                    are in fact relevant contact information.
+                </p>
+                <p>
+                    Its content model is also flow content, but with no heading content descendants, no sectioning
+                    content
+                    descendants and no <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code> or
+                    <code>&lt;address&gt;</code> element descendants</code>
+                </p>
+            </div>
         </section>
 
         <section>
@@ -293,101 +309,202 @@
                 About HTML elements that have to do with grouping things
             </p>
 
-            <h3>Paragraph</h3>
-            <p>
-                A paragraph, represented by the tag <code>&lt;p&gt;</code> is typically a run of phrasing content that
-                forms a block of text with one or more <strong>sentences that discuss a particular topic</strong>, bun
-                can also be used for more <strong>general thematic grouping</strong>.
-            </p>
-
-            <h3>Quotes</h3>
-            <p>A quote, represented by the tag <code>&lt;blockquote&gt;</code> represents a section that is quoted from
-                another source and the address to that source may be cited in the <code>&lt;cite&gt; atribute</code><br>
-                Example:
-            </p>
-            <blockquote cite="https://html.spec.whatwg.org/multipage/grouping-content.html#the-blockquote-element">
-                <p>
-                    Attribution for the quotation, if any, must be placed outside the blockquote element.
-                </p>
-            </blockquote>
-            <p> - HTML Spec</p>
-
-            <p class="callout">&#128161;The &lt;blockquote&gt; should be used when you want to cite a long phrase,
-                instead the &lt;q&gt; tag should be used for inline quotations.</p>
-
-            <h3>Unordened Lists</h3>
-            <p>
-                A unordened list, represented by the tag <code>&lt;ul&gt;, represents a list of items, where the order is not important.
-                <br>
-                    The itens inside the list will be represented by the tag <code>&lt;li&gt;</code>.
-                </code>
-            </p>
-            <p class="callout">
-                &#128161; An <code>&lt;li&gt;</code> element's end tag can be <strong>omitted</strong> if the
-                <code>&lt;li&gt;</code> element is followed by another one or if there's no more content in the parent
-                element
-            </p>
-
-            <h3>Ordened Lists</h3>
-            <p>
-                An ordened list, represented by the tag <code>&lt;ol&gt;</code> represents a list of items where the
-                items have been intentionally ordered, which means that changing the order would change the meaning of
-                the document.
-            </p>
-            <p class="callout">
-                &#128161; The <code>&lt;ol&gt;</code> tag supports a attribute called <strong>reversed</strong>. If
-                present, it
-                indicates that the list is descending (3, 2, 1..), if not, the list is ascending (1, 2, 3...)<br>
-                Another attribute is the <strong>start</strong> that you can define in which number the list will start.
-            </p>
-
-            <h3>Association Lists</h3>
-            <p>
-                An association list, represented by the tag <code>&lt;dl&gt;</code> consists of zero or more
-                name(<code>&lt;dt&gt;</code>)-value(<code>&lt;dd&gt;</code>) groups.
-                <br>
-                It can be terms and definitions, metadata topics and values, questions and answers or any other groups
-                of name-value data.
-            </p>
             <div>
-                <h4>dl</h4>
-                <p>Open and closes a association list</p>
-                <h4>dt</h4>
-                <p>Representes the term or nome, part of a term-description group<br>When used inside a
-                    <code>&lt;dl&gt;</code> tag, the <code>&lt;dt&gt;</code> itself doesn't indicate that its
-                    content are a term being
-                    defined, for that you must use the <code>&lt;dfn&gt;</code> tag.
+                <h3>Paragraph</h3>
+                <p>
+                    A paragraph, represented by the tag <code>&lt;p&gt;</code> is typically a run of phrasing content
+                    that
+                    forms a block of text with one or more <strong>sentences that discuss a particular topic</strong>,
+                    bun
+                    can also be used for more <strong>general thematic grouping</strong>.
                 </p>
-                <h4>dd</h4>
-                <p>Represents the description, definition or value, part of a term-description group in a description
-                    list
-                    (<code>&lt;dl&gt;</code>)</p>
             </div>
 
-            <p>Example:
-            <pre>
-                                <code>
-                                    &lt;dl&gt;
-                                        &lt;dt&gt; Authors
-                                        &lt;dd&gt; John
-                                        &lt;dd&gt; Luke
-                                        &lt;dt&gt; Editor
-                                        &lt;dd&gt; Frank
-                                    &lt;/dl&gt;
-                                    
-                        </code>
-                        </pre>
-            </p>
-            <p class="callout">&#128161; Even though the closing tag for<code> &lt;dd&gt;</code> and
-                <code>&lt;dt&gt;</code> are optional if the imeddiately following tag is another dd or dt, it's a
-                good practice to
-                use it, because
-                <q cite="https://www.htmlhelp.com/reference/html40/lists/dd.html">its use prevents common brownser
-                    bugs with style sheet</q>
-            </p>
-            <p class="callout">&#128161; The tag <code>&lt;dl&gt;</code> are not allowed inside a <code>&lt;p&gt;</code>
-                tag, cause it's not a phrasing content</p>
+            <div>
+                <h3>Quotes</h3>
+                <p>A quote, represented by the tag <code>&lt;blockquote&gt;</code> represents a section that is quoted
+                    from
+                    another source and the address to that source may be cited in the
+                    <code>&lt;cite&gt; atribute</code><br>
+                    Example:
+                </p>
+                <blockquote cite="https://html.spec.whatwg.org/multipage/grouping-content.html#the-blockquote-element">
+                    <p>
+                        Attribution for the quotation, if any, must be placed outside the blockquote element.
+                    </p>
+                </blockquote>
+                <p> - HTML Spec</p>
+                <p class="callout">&#128161;The &lt;blockquote&gt; should be used when you want to cite a long phrase,
+                    instead the &lt;q&gt; tag should be used for inline quotations.</p>
+            </div>
 
+            <div>
+                <h3>Unordened Lists</h3>
+                <p>
+                    A unordened list, represented by the tag <code>&lt;ul&gt;, represents a list of items, where the order is not important.
+                    <br>
+                        The itens inside the list will be represented by the tag <code>&lt;li&gt;</code>.
+                    </code>
+                </p>
+                <p class="callout">
+                    &#128161; An <code>&lt;li&gt;</code> element's end tag can be <strong>omitted</strong> if the
+                    <code>&lt;li&gt;</code> element is followed by another one or if there's no more content in the
+                    parent
+                    element
+                </p>
+            </div>
+
+            <div>
+                <h3>Ordened Lists</h3>
+                <p>
+                    An ordened list, represented by the tag <code>&lt;ol&gt;</code> represents a list of items where the
+                    items have been intentionally ordered, which means that changing the order would change the meaning
+                    of
+                    the document.
+                </p>
+                <p class="callout">
+                    &#128161; The <code>&lt;ol&gt;</code> tag supports a attribute called <strong>reversed</strong>. If
+                    present, it
+                    indicates that the list is descending (3, 2, 1..), if not, the list is ascending (1, 2, 3...)<br>
+                    Another attribute is the <strong>start</strong> that you can define in which number the list will
+                    start.
+                </p>
+            </div>
+
+            <div>
+                <h3>Association Lists</h3>
+                <p>
+                    An association list, represented by the tag <code>&lt;dl&gt;</code> consists of zero or more
+                    name(<code>&lt;dt&gt;</code>)-value(<code>&lt;dd&gt;</code>) groups.
+                    <br>
+                    It can be terms and definitions, metadata topics and values, questions and answers or any other
+                    groups
+                    of name-value data.
+                </p>
+                <div>
+                    <h4>dl</h4>
+                    <p>Open and closes a association list</p>
+                    <h4>dt</h4>
+                    <p>Representes the term or nome, part of a term-description group<br>When used inside a
+                        <code>&lt;dl&gt;</code> tag, the <code>&lt;dt&gt;</code> itself doesn't indicate that its
+                        content are a term being
+                        defined, for that you must use the <code>&lt;dfn&gt;</code> tag.
+                    </p>
+                    <h4>dd</h4>
+                    <p>Represents the description, definition or value, part of a term-description group in a
+                        description
+                        list
+                        (<code>&lt;dl&gt;</code>)</p>
+                </div>
+                <p>Example:
+                <pre>
+                                    <code>
+                                        &lt;dl&gt;
+                                            &lt;dt&gt; Authors
+                                            &lt;dd&gt; John
+                                            &lt;dd&gt; Luke
+                                            &lt;dt&gt; Editor
+                                            &lt;dd&gt; Frank
+                                        &lt;/dl&gt;
+                
+                            </code>
+                            </pre>
+                </p>
+                <p class="callout">&#128161; Even though the closing tag for<code> &lt;dd&gt;</code> and
+                    <code>&lt;dt&gt;</code> are optional if the imeddiately following tag is another dd or dt, it's a
+                    good practice to
+                    use it, because
+                    <q cite="https://www.htmlhelp.com/reference/html40/lists/dd.html">its use prevents common brownser
+                        bugs with style sheet</q>
+                </p>
+                <p class="callout">&#128161; The tag <code>&lt;dl&gt;</code> are not allowed inside a
+                    <code>&lt;p&gt;</code>
+                    tag, cause it's not a phrasing content
+                </p>
+            </div>
+
+            <div>
+                <div>
+                    <h3>Multidimensional Content - Tabular Data</h3>
+                    <p>
+                        The <code>&lt;table&gt;</code> element/tag represents data with more than one dimension, in the
+                        form
+                        of a <strong>table</strong>.
+                        <br>
+                        It has rows, columns and cells given by their descendants. The rows and columns form a
+                        <strong>grid</strong>; a table's cells must completely cover that grid without overlap
+                    </p>
+                </div>
+
+                <div>
+                    <h4>Elements correleated/related with Table:</h4>
+
+                    <h5>Caption Element</h5>
+                    <p>Represents the title of the table and can explain what it's for or how to use it
+                    </p>
+
+                    <p class="callout">&#128161; When the table is the only content in a figure element, the
+                        <code>&lt;figcaption&gt;</code>should be used in favor of the <code>&lt;caption&gt;</code>
+                        element
+                    </p>
+
+                    <h5>Colgroup Element</h5>
+
+                    <p>This element serves as a container for <code>&lt;col&gt;</code> elements and it's used to style
+                        one or more columns for all table rows
+                        <br>
+                        It can have zero, one, or more
+                        <code>&lt;col&gt;</code> elements
+                    </p>
+
+                    <h6>Col Element</h6>
+                    <p>Is used to represent one or more columns in the column group.
+                        <br><br>
+                        Example:
+                    </p>
+
+                    <pre>
+                        <code>
+                            &lt;table&gt;
+                            &lt;colgroup&gt;
+                            &lt;col style="background-color:lightblue"&gt;
+                            &lt;col span="2" style="background-color:pink"&gt;
+                            &lt;/colgroup&gt;
+                            &lt;tr&gt;
+                            &lt;th&gt;Id&lt;/th&gt;
+                            &lt;th&gt;First Name&lt;/th&gt;
+                            &lt;th&gt;Last Name&lt;/th&gt;
+                            
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                            &lt;td&gt;ART-303&lt;/td&gt;
+                            &lt;td&gt;Vincent&lt;/td&gt;
+                            &lt;td&gt;Van Gogh&lt;/td&gt;
+                            
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                            &lt;td&gt;ART-877&lt;/td&gt;
+                            &lt;td&gt;Paul&lt;/td&gt;
+                            &lt;td&gt;C&eacute;zanne&lt;/td&gt;
+                            
+                            &lt;/tr&gt;
+                            &lt;/table&gt;
+                        </code>
+                    </pre>
+
+                    <p class="callout">&#128161; With the <code>&lt;span&gt;</code> element you can tell how many column
+                        do you want to be affected by the style</p>
+
+                    <h5>thead</h5>
+
+                    <h5>tbody</h5>
+
+                    <h5>tfoot</h5>
+                    <h5>tr</h5>
+                    <h5>td</h5>
+                    <h5>th</h5>
+                </div>
+            </div>
         </section>
 
     </main>
