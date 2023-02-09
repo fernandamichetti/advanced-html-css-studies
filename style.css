@@ -10,3 +10,7 @@ img {
 .callout {
     background-color: #bdb8b7
 }
+
+td {
+    text-align: center;
+}
