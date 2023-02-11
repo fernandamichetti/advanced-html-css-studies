@@ -847,6 +847,110 @@
                     </code>
         </section>
 
+        <section>
+            <h2>Section 6: Text itself</h2>
+            <p>About changing the meaning of the document, but at an text level.
+                <br>
+                <span>
+                    <strong>HTML tags/elements must not be used thinking visually, it's always about the
+                        meaning</strong>.
+                </span>
+            </p>
+
+            <h3>Emphasis - <code>&lt;em&gt;</code></h3>
+            <p>For emphasazing something in the text, the <code>&lt;em&gt;</code> tag is the most apropriate. The
+                easiest way to know when it's appropriete to use <code>&lt;em&gt;</code> is to think how you would say
+                the phrase.
+                <br>
+                <span class="callout">&#128161; It <em>must</em> not be used as a way to make the text "italic". This
+                    tag, as well as the others seen bellow must be used thinking about the meaning of the document and
+                    not how it will be viewed. It's also not a tag that convey importance, for that the
+                    <code>&lt;strong&gt;</code> is the right element.
+                </span>
+                <br>
+                In the past it was normal to use the <code>&lt;i&gt;</code> tag when
+                you wanted to make something italic, these days the <code>&lt;i&gt;</code> should be used when you
+                want to represent a alternate voice, mood or otherwise offset from the normal prose, like indicating
+                a different quality of text as a cientific name, technical term, an idiomatic phrase from another
+                language etc.
+            </p>
+
+            <h3>Importance - <code>&lt;strong&gt;</code></h3>
+            <p>
+                When you have something in the text that should be represented as something of strong importance,
+                seriousness or urgency.
+                <br>
+                Even though by default most user agents make the <code>&lt;strong&gt;</code> tag appear with a bold
+                effect, it's important to not use the element for this purpose.
+            </p>
+
+            <h3>Side Comments - <code>&lt;side&gt;</code></h3>
+            <p>
+                It's a tag used to represent side comments such as small print, disclaimers, coyrights.
+                <br>
+                It should not be used for extented texts, but for short ones and also not be used for subheadings.
+            </p>
+
+            <h3>Line Breaks - br</h3>
+            <p>
+                The <code>&lt;br&gt;</code> tag must be used only in line breaks that are <strong>actually</strong> part
+                of the content, not to separating thematic groups in a paragraph.
+            </p>
+            <p>Example:</p>
+            <p>1. Wrong use of the <code>&lt;br&gt;</code> tag:</p>
+            <pre>
+                <code>
+&lt;p&gt;
+&lt;label&gt;Name: Fernanda&lt;/label&gt;
+&lt;br&gt;
+&lt;label&gt;Age: 26&lt;/label&gt;
+&lt;/p&gt;
+                </code>
+            </pre>
+
+            <code>
+                <p>
+                    Name: Fernanda
+                    <br>
+                    Age: 26
+                </p>
+            </code>
+
+            <p>2. Right use to use <code>&lt;br&gt</code> tag:</p>
+            <pre>
+                <code>
+&lt;p&gt;
+Name: Fernanda
+&lt;/p&gt;
+&lt;p&gt;
+Age: 26
+&lt;/p&gt;
+                </code>
+            </pre>
+
+            <code>
+                <p>
+                    Name: Fernanda
+                </p>
+                <p>
+                    Age: 26
+                </p>
+            </code>
+
+            <h3>Author's Comments</h3>
+            <p>
+                When you want to make a comment or explain the code to yourself or to other future authors you should
+                use &lt;!-- coment --&gt; that way the User Agent will know that this part should not be read.
+            </p>
+
+            <h3>Span</h3>
+            <p>
+                Is a meaningless element, but can be useful when used together with the global attributel like
+                <code>class</code>, <code>lang</code> or <code>dir</code>
+            </p>
+
+        </section>
+
     </main>
 </body>
 
