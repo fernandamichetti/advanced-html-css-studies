@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <section id="navMenu">
+    <nav id="navMenu">
         <ul>
             <li><a href="#section1">Section 1</a></li>
             <li><a href="#section2">Section 2</a></li>
@@ -22,7 +22,7 @@
             <li><a href="#section8">Section 8</a></li>
         </ul>
 
-    </section>
+    </nav>
     <main>
         <header>
             <h1>HTML5 and CSS3: The notebook</h1>
@@ -1088,6 +1088,67 @@ Age: 26
 
         </section>
 
+        <section id="section9">
+            <h2>Interactivy</h2>
+
+            <h3>Nav Element</h3>
+            <p>Represents a section of the page that links to other pages or parts within the page. It's not supposed to
+                be used to any group of links, but for sections that consist of major navigation blocks.</p>
+
+            <h3>Froms, Fields and Labels</h3>
+            <p>The form element represents a hyperlink that can be manipulated and you can't have a form within a form
+            </p>
+
+            <p>Field (or control) ah HTML element that allows the user to input information. The values entered into
+                these fields are then used to generate the query string "q=html&page=3&color=red"</p>
+            <p>When a input field has the name "name" for example, the user agent is able to identify it and when the
+                user click on the input field it will likely auto complete with the name of the user (if they have used
+                this kind of input field before. If you don't want the auto complete feature to work just use
+                autocomplete="off". This all means that when you choose the name of your data field/form field it can
+                hve an impact on the user experience.</p>
+
+            <p>The Label element is used to represent a caption in a user interface, when associated witha specific form
+                control (input). When the user clicks on the label it will highlight the input/form control, the same
+                way as if the input itself was clicked, except when the user clicks on the label the autocomplete mode
+                won't show.
+                <br>
+                The label can be used in two different ways:
+            <ul>
+                <li>Puting the input element <strong>inside</strong> the label element</li>
+                <li>Puting the input element <strong>outside</strong> the label element, this way you have to give your
+                    input an ID and use the attribute for in the label element, so you can say which ID/input that label
+                    represents</li>
+            </ul>
+            </p>
+            <p>
+            <pre>
+                                <code>
+                                    &lt;form action=&quot;&quot;&gt; &lt;!--The action attribute specifies where the form should be send once its
+                                    submitted--&gt;
+                                    &lt;label for=&quot;&quot;&gt;
+                                    Name
+                                    &lt;input type=&quot;text&quot; name=&quot;name&quot; autocomplete=&quot;off&quot; /&gt;
+                                    &lt;/label&gt;
+                                    &lt;/form&gt;
+                                </code>
+                            </pre>
+            </p>
+            <form action="">
+                <label>
+                    Name
+                    <input type="text" name="name" />
+                </label>
+
+            </form>
+            <p>
+                <span class="callout">&#128161; The label has nothing to do with the <strong>query string</strong>, its
+                    use
+                    is purely for the user. The name/value pair is coming from the name attribute inside the input
+                    element. So
+                    it's the name attribute that is for the manipulation of the hyperlink.</span>
+            </p>
+
+        </section>
     </main>
 </body>
 
