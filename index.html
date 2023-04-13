@@ -1237,6 +1237,50 @@ Age: 26
             <p>It's important to remember that when it comes to CSS, a rule that you apply to an element will not
                 necessarily only apply to that said element, but sometimes it'll apply to its descendants too.</p>
 
+            <h3>Universal Selector</h3>
+            <p>Represented by <code>*</code>, it selects every element in the tree.
+            </p>
+
+            <h3>Attribute selectors</h3>
+            <p>When you want to style a attribute. For that we put the name of the attribute inside [ ]. It can be used
+                in different forms:
+            <ol>
+                <li>[name of attribute]: Every element that has an attribute will be given the style</li>
+                <p>
+                    <span class="callout"> &#128161; It's important to remember that usually the
+                        <code>&lt;HTML&gt;</code> contains the attribute lang to define in which language the page is
+                        written and every descendant of element of <p>&lt;HTML&gt;</p> will inherite its styles
+                        <br>
+                        Class, ID and slots are also attributes</span>
+                </p>
+                <li>[name of attribute=name of value]: Will only style the attribute whose value is axactly the name
+                    given. Example: [lang=pt-br]
+                </li>
+                <li>[name of attribute~=name of value]: Will style attributes that have more than one word in which one
+                    is exactly the name given</li>
+            </ol>
+            </p>
+
+            <h3>Id selectors</h3>
+            <p>When you want to style an specific ID you can use #nameOfID to set the rules of the style</p>
+
+            <h3>Class selectors</h3>
+            <p>To style an specific class you can use .nameOfClass. When you want to select of an specific element with
+                that said class you can use element.nameOfClass. Example: div.names and even more than one class
+                div.names.age that way if you have an element with the class name but not age the specified style won't
+                be applied to that element</p>
+
+            <h3>Group of selectors</h3>
+            <p>When you want to give a rule of styles to more than one element you can use a comma to separate them.
+                Example: ol, ul or even ol[lang], ul.name </p>
+            <p>
+                <span class="callout">&#128161; When using this to group elements it's important to garantee that
+                    everything is corect, because if there's something that doens't exist in the document even those who
+                    are correct won't have the style applied. For example, if you write incorrectly the class
+                    name</span>
+            </p>
+
+
         </section>
 
     </main>
