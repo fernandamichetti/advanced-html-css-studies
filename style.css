@@ -11,6 +11,10 @@ img {
   background-color: #bdb8b7;
 }
 
+.comment {
+  font-size: 10px;
+}
+
 td {
   text-align: center;
 }

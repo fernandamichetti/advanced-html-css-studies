@@ -1115,32 +1115,76 @@ Age: 26
                 <br>
                 The label can be used in two different ways:
             <ul>
-                <li>Puting the input element <strong>inside</strong> the label element</li>
-                <li>Puting the input element <strong>outside</strong> the label element, this way you have to give your
+                <li><strong>Implicit:</strong> Puting the input element <strong>inside</strong> the label element.</li>
+                <li><strong>Explicit:</strong> Puting the input element <strong>outside</strong> the label element, this
+                    way you have to give your
                     input an ID and use the attribute for in the label element, so you can say which ID/input that label
                     represents</li>
             </ul>
             </p>
             <p>
+                <span class="callout">&#128161; For accessibility context the <strong>Explicit</strong> way is better,
+                    because even though all screen reader should work with implicit label/input, some just won't play
+                    nice with it.</span>
+            </p>
+            <p>
             <pre>
                                 <code>
-                                    &lt;form action=&quot;&quot;&gt; &lt;!--The action attribute specifies where the form should be send once its
+                                    &lt;form&gt; !--The action attribute specifies where the form should be send once its
                                     submitted--&gt;
-                                    &lt;label for=&quot;&quot;&gt;
-                                    Name
-                                    &lt;input type=&quot;text&quot; name=&quot;name&quot; autocomplete=&quot;off&quot; /&gt;
-                                    &lt;/label&gt;
+                                    &lt;p&gt;
+                                    &lt;label for=&quot;nameUser&quot;&gt;Nome&lt;/label&gt;
+                                    &lt;input type=&quot;text&quot; name=&quot;name&quot; id=&quot;nameUser&quot;/&gt;
+                                    &lt;/p&gt;
                                     &lt;/form&gt;
-                                </code>
                             </pre>
             </p>
-            <form action="">
-                <label>
-                    Name
-                    <input type="text" name="name" />
-                </label>
+            <form action="#">
+                <p>
+                    <label for="nameUser">Nome</label>
+                    <input type="text" name="name" id="nameUser" />
+                </p>
+                <p>
+                    <label for="whyContact">Why Contact</label>
+                    <select name="whycontacting" id="whyContact">
+                        <option value="jobinterview">Job Interview</option>
+                        <option value="needcontractor">Need Contractior</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="comments">Comments</label>
+                    <textarea name="comment" id="comments" rows="3"></textarea>
+                </p>
+                <fieldset>
+                    <legend>Best Contact Time</legend>
+                    <p class="comment">To group a batch of controls together the <code>&lt;fieldset&gt;</code> element
+                        should be used and the title of such group is given by <code>&lt;legend&gt;</code> element that
+                        must be the firt element in the fieldset
+                        <br>An important attribute of <code>&lt;fieldset&gt;</code> is the disabled one. When specified
+                        causes all its descendants to be disabled, being the user unable to select any of it
+                    </p>
 
+                    <p>
+                        <label for="contactTime1">Morning</label>
+                        <input type="radio" id="contactTime1" name="contactTime" value="morning" />
+                    </p>
+                    <p>
+                        <label for="contactTime2">Afternoon</label>
+                        <input type="radio" id="contactTime2" name="contactTime" value="afternoon">
+                    </p>
+                    <p class="comment">The Name value of the radio group must be the same, if not the browser will allow
+                        it for more than one option to be selected, because it will understand that it's two (or more)
+                        different group</p>
+                    <p>
+                        <label for="ASAP">Is this really important?</label>
+                        <input type="checkbox" id="ASAP" name="yes">
+                    </p>
+                </fieldset>
+                <p><button type="submit">Send</button></p>
             </form>
+
+            <p>The right way to separate different label/input in a form is using the <code>&lt;p&gt;</code> tag, as the
+                specification says.</p>
             <p>
                 <span class="callout">&#128161; The label has nothing to do with the <strong>query string</strong>, its
                     use
@@ -1183,7 +1227,6 @@ Age: 26
                 <li>Reset: Clears/resets the form</li>
                 <li>Button: Does nothing</li>
             </ul>
-
             </p>
 
         </section>
