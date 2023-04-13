@@ -20,9 +20,10 @@
             <li><a href="#section6">Section 6</a></li>
             <li><a href="#section7">Section 7</a></li>
             <li><a href="#section8">Section 8</a></li>
+            <li> <a href="#section9">Section 9</a></li>
         </ul>
-
     </nav>
+
     <main>
         <header>
             <h1>HTML5 and CSS3: The notebook</h1>
@@ -1095,7 +1096,7 @@ Age: 26
             <p>Represents a section of the page that links to other pages or parts within the page. It's not supposed to
                 be used to any group of links, but for sections that consist of major navigation blocks.</p>
 
-            <h3>Froms, Fields and Labels</h3>
+            <h3>Forms, Fields and Labels</h3>
             <p>The form element represents a hyperlink that can be manipulated and you can't have a form within a form
             </p>
 
@@ -1146,6 +1147,43 @@ Age: 26
                     is purely for the user. The name/value pair is coming from the name attribute inside the input
                     element. So
                     it's the name attribute that is for the manipulation of the hyperlink.</span>
+            </p>
+            <p>Another attribute of the form tag is "method", by default the method is defined GET, but you can change
+                it to POST and a few other that are not so used.</p>
+
+            <h4>Diference GET and POST</h4>
+            <h5>GET</h5>
+            <p>Used to request data from a specified resource. The query string (name/value pairs) appears in the URL of
+                the site.
+                <br>
+                It's only used to request data, not modify it and the data must be string type; It can be cached and
+                remains in the browser history, besides that it can be bookmarked and have a lenght restriction (2048
+                characters).
+            </p>
+            <p>
+                <span class="callout"> &#128161; It never should be used when dealing with sensitive data, because the
+                    that is visible for <strong>everyone</strong> in the URL!</span>
+            </p>
+
+            <h5>POST</h5>
+            <p>Used to send data to a server to create/update a resource, supports different data types. The data sent
+                via POST is stored in the request body of the HTTP request.
+                <br>
+                It can't be cached and don't reamin in the browser history, besides that it can't be bookmarked and
+                don't have a lenght restriction.
+            </p>
+
+            <h3>Buttons</h3>
+            <p>Initializing the HPPT request - Submiting the data </p>
+            <p>You can create a button with a input that has a button type, but it's not de best way to use it.
+                <br>
+                HTML5 has a special tag called <code>&lt;button&gt;</code>. It has 3 attributes that define the type:
+            <ul>
+                <li>Subit: Submits the form</li>
+                <li>Reset: Clears/resets the form</li>
+                <li>Button: Does nothing</li>
+            </ul>
+
             </p>
 
         </section>
