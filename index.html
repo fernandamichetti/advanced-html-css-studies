@@ -1361,6 +1361,66 @@ Age: 26
                 </code>
             </p>
 
+            <h3>Pseudo-class</h3>
+            <p>Selection based on information that lies outside the document tree - It means that instead of the author
+                saying directly which element should be styled, the selector asks the browserto look at the document
+                tree and the select document comes from that analysis</p>
+
+            <h4>Child-index pseudo-classes</h4>
+            <p>Selects elements based on their index amongst their inclusive siblings</p>
+
+            <h5>:nth-child(An+B)</h5>
+            <p>The sintax is element:nth-child(An-B) which means you take the results for the element, divides them into
+                groups of An and selects the B of each group
+            </p>
+            <p>
+                <code>
+                        <pre>
+                            li:nth-child(2n+2) {
+                                color: red;
+                            }
+                        </pre>
+                    </code>
+            </p>
+            <p class="comment">
+                If there's a list with 3 elements they will be divided into groups of two, one with the 2 firsts
+                elements and the other with the third element. As just the second element of each group will have the
+                color red, just the second li will have it, because in the second group there's just one element, or li.
+            </p>
+            <p>Since even and odd are so commonly instead of creating a mathematic rule you can just type even/odd for
+                the same effect</p>
+            <p>
+                <code>
+                    <pre>
+                        li:nth-child(even)
+                    </pre>
+                </code>
+            </p>
+            <p>It's also possible to just choose to apply a style to the first x elements with:</p>
+            <p>
+                <code>
+                    <pre>
+                        li:nth-child(-n+3)
+                    </pre>
+                </code>
+            </p>
+            <p>Or apply just for the x element:</p>
+            <p>
+                <code>
+                    <pre>
+                        li:nth-child(7)
+                    </pre>
+                </code>
+            </p>
+            <p>It's possible to also choose a range of elements, from the x to the y the style must be applied:</p>
+            <p>
+                <code>
+                    <pre>
+                        li:nth-child(n+8):nth-child(-n+15)
+                    </pre>
+                </code>
+            </p>
+
         </section>
 
     </main>
