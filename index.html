@@ -263,7 +263,7 @@
                 <strong>It’s self-contained</strong>
             </p>
             <p>It falls into 3 main categories:</p>
-            <ol>
+            <ul>
                 <li>Is a flow element - essentially the document flowing from top to bottom</li>
                 <li>Is a sectioning element - Is a content that defines the scope of the outline, potentially
                     has a
@@ -271,7 +271,7 @@
                 <li>Is a palpable content - It’s expected, generally, that there’s something inside the element.
                     There’ll be other elements
                     inside of it.</li>
-            </ol>
+            </ul>
             <span class="callout">
                 &#128161; Inside the article element it can have any kind of flow content
             </span>
@@ -1244,7 +1244,7 @@ Age: 26
             <h3>Attribute selectors</h3>
             <p>When you want to style a attribute. For that we put the name of the attribute inside [ ]. It can be used
                 in different forms:
-            <ol>
+            <ul>
                 <li>[name of attribute]: Every element that has an attribute will be given the style</li>
                 <p>
                     <span class="callout"> &#128161; It's important to remember that usually the
@@ -1258,7 +1258,7 @@ Age: 26
                 </li>
                 <li>[name of attribute~=name of value]: Will style attributes that have more than one word in which one
                     is exactly the name given</li>
-            </ol>
+            </ul>
             </p>
 
             <h3>Id selectors</h3>
@@ -1280,6 +1280,86 @@ Age: 26
                     name</span>
             </p>
 
+            <h3>Descendants, Ancestors, Parents, Children and Sibilings</h3>
+            <p>
+            <ul>
+                <li><strong>Descendant:</strong> Refers to any element that is connected but <strong>lower</strong> down
+                    the document tree - no matter how many levels</li>
+                <li><strong>Ancestor:</strong> Refers to any element that is connected but <strong>further
+                        up</strong>the document tree - no matter how many levels</li>
+                <li><strong>Parent:</strong>Refers to an elements <strong>directly above and connected</strong> to an
+                    element.</li>
+                <li><strong>Child:</strong>Refers to an elements <strong>directly below and conected</strong> to an
+                    element</li>
+                <li><strong>Sibiling:</strong>Refers to an elements that <strong>shares the same parent</strong> to
+                    another element</li>
+            </ul>
+            </p>
+
+            <h3>Combinators: Descendant</h3>
+            <p>Made up of <strong>two or more selectors separated by white space</strong> and selects elements B that
+                are descendants from the element A.
+            </p>
+            <p>
+                Example:
+                <code>
+        <pre>
+            h1 strong { color: red;}
+
+            &lt;h1&gt; This headline is &lt;strong&gt;very&lt;/strong&gt; importante&lt;h1&gt;
+        </pre>
+    </code>
+                <br>
+            </p>
+
+            <p>
+                <span class="callout">&#128161; When we say <strong>descendant of</strong> we're looking for
+                    <strong>any</strong> ancestor, not just the immediate parent </span>
+            </p>
+
+            <h3>Combinators: Child</h3>
+            <p class="test">When you want to select the directly below element of another you use &gt;</p>
+
+            <p>Example:
+                <code>
+                    <pre>
+                        h3 > p {
+                            font-size: 20px;
+                        }
+
+                        div ol>li p {
+                            font-size: 10px;
+                        }
+                    </pre>
+                </code>
+            </p>
+
+            <h3>Combinators: Next-Sibiling</h3>
+            <p>You can select the<strong> next</strong> sibiling of a element using +. </p>
+            <p>Example:
+
+                <code>
+                    <pre>
+                        ul + p {
+                            font-size: 20px;
+                        }
+                    </pre>
+                </code>
+            </p>
+
+            <h3>Combinators: Subsequent-Sibiling</h3>
+            <p>
+            <p>Different from the next-sibiling combinator, this one selects sibiling elements no matter if it's
+                directly or no, it just have to come <strong>after</strong>. To select this you have to use a ~</p>
+
+            <p>
+                Example:
+                <code>
+                    <pre>
+                        p ~ ol
+                    </pre>
+                </code>
+            </p>
 
         </section>
 
