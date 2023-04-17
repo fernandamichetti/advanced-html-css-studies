@@ -21,6 +21,7 @@
             <li><a href="#section7">Section 7</a></li>
             <li><a href="#section8">Section 8</a></li>
             <li> <a href="#section9">Section 9</a></li>
+            <li> <a href="#section10">Section 10</a></li>
         </ul>
     </nav>
 
@@ -413,7 +414,8 @@
             <p>A quote, represented by the tag <code>&lt;blockquote&gt;</code> represents a section that is quoted
                 from
                 another source and the address to that source may be cited in the
-                <code>&lt;cite&gt; atribute</code><br>
+                <code>&lt;cite&gt;</code>atribute.
+                <br>
                 Example:
             </p>
             <blockquote cite="https://html.spec.whatwg.org/multipage/grouping-content.html#the-blockquote-element">
@@ -1090,7 +1092,7 @@ Age: 26
         </section>
 
         <section id="section9">
-            <h2>Interactivy</h2>
+            <h2>Section 9: Interactivy</h2>
 
             <h3>Nav Element</h3>
             <p>Represents a section of the page that links to other pages or parts within the page. It's not supposed to
@@ -1138,6 +1140,7 @@ Age: 26
                                     &lt;/p&gt;
                                     &lt;/form&gt;
                             </pre>
+            </code>
             </p>
             <form action="#">
                 <p>
@@ -1231,7 +1234,7 @@ Age: 26
         </section>
 
         <section id="section10">
-            <h2>Stylesheets and Querying Trees</h2>
+            <h2>Section 10: Stylesheets and Querying Trees</h2>
 
             <h3>Inheritance</h3>
             <p>It's important to remember that when it comes to CSS, a rule that you apply to an element will not
@@ -1365,6 +1368,15 @@ Age: 26
             <p>Selection based on information that lies outside the document tree - It means that instead of the author
                 saying directly which element should be styled, the selector asks the browserto look at the document
                 tree and the select document comes from that analysis</p>
+            <blockquote cite="https://drafts.csswg.org/css2/#pseudo-classes%E2%91%A0">
+                <p>
+                    [...] classify elements on characteristics other than their name, attributes or content; in
+                    principle characteristics that
+                    cannot be deduced from the document tree. Pseudo-classes may be dynamic, in the sense that an
+                    element may acquire or
+                    lose a pseudo-class while a user interacts with the document.
+                </p>
+            </blockquote>
 
             <h4>Child-index pseudo-classes</h4>
             <p>Selects elements based on their index amongst their inclusive siblings</p>
@@ -1381,6 +1393,27 @@ Age: 26
                             }
                         </pre>
                     </code>
+            </p>
+            <p>
+                <span class="callout">&#128161; It's based on the position in the parent container so if there's a code:
+                    <code>
+                        <pre>
+                        style {
+                        p:nth-child(2n - 1) {
+                        color red
+                        }
+                        }
+                        
+                        &lt;div&gt;
+                        &lt;h2&gt; Lines &lt;/h2&gt;
+                        &lt;p&gt; Line 1 &lt;/p&gt;
+                        &lt;p&gt; Line 2 &lt;/p&gt;
+                        &lt;/div&gt;
+                        </pre>
+                    </code>
+                    Just the <strong>Second line</strong> will be red, because the first element of the first group is
+                    the <code>&lt;h2&gt;</code> element.
+                </span>
             </p>
             <p class="comment">
                 If there's a list with 3 elements they will be divided into groups of two, one with the 2 firsts
@@ -1420,6 +1453,76 @@ Age: 26
                     </pre>
                 </code>
             </p>
+
+            <h5>:nth-last-child(An+B)</h5>
+            <p>
+                This pseudo-class matches elements based on their position <strong>among</strong> a group of sibilings,
+                counting <strong>from the end</strong>
+            </p>
+
+            <h4>Type Child-Indexed Pseudo-classes</h4>
+            <p>They work based on an element's indeix among elements of the <strong>same type</strong> in their sibiling
+                list. So while the child-index looks for something around all the sibilings of a parent, no matter it's
+                type, the type child-index looks the index of only the same tag of a sibling list.</p>
+
+            <h5>:nth-of-type(An+B)</h5>
+            <p>It does the same type as the nth-child, but only between those with the same tag inside a parent element.
+            </p>
+
+            <h4>Location Pseudo-Classes</h4>
+            <p>This kind of pseudo classes lets you make selections based on links, it's status or where it may be going
+                to.
+                <br>
+                The two most common (and mutually exclusive) are:
+            <ul>
+                <li>:link - Apply to links that have not yet been visited</li>
+                <li>:visited - Apply to those who have been visited by the user</li>
+            </ul>
+            </p>
+
+            <h4>User Action Pseudo-Classes</h4>
+            <p>This pseudo-classes selects something based on a action that the user did.
+                <br>
+                The common are:
+            <ul>
+                <li>:hover or :focus - When the cursor hovers over a element or an elements hs the focus (using keyboard
+                    or mouse events)</li>
+            </ul>
+            </p>
+
+            <h4>Negation (Matches None) Pseudo-Class</h4>
+            <p>Finds elements that are <strong>not</strong> something</p>
+            <p>
+                <code>
+                    <pre>
+                        section:not(#section1) {
+                            font-style: italic;
+                        }
+                    </pre>
+                </code>
+            </p>
+            <p>It will style all the sections, except the section with the ID section1 with a italic style</p>
+
+            <h3>Pseudo-elements</h3>
+            <p>Basically elements in the document that haven't been marked up as elements. For example there's the
+                pseudo-elements "first-letter", there isn't a tag that says it, but you can style it.
+                <br>
+                Example:
+            </p>
+            <p>
+                <code>
+                    <pre>
+                        p::first-letter {
+                            font-weight: bold;
+                        }
+                    </pre>
+                </code>
+            </p>
+            <p>To "find" a pseudo-elements you always use double : </p>
+
+
+
+
 
         </section>
 
