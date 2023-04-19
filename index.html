@@ -1522,7 +1522,8 @@ Age: 26
 
             <h3>The Cascade</h3>
             <p>
-                <span class="callout">The Cascade means that after the declarations have been sorted (put in the right
+                <span class="callout">&#128161;The Cascade means that after the declarations have been sorted (put in
+                    the right
                     order), the one that will be applied is the top one and the bellow will be ignored.</span>
                 <br>
                 This order takes into consideration:
@@ -1567,7 +1568,7 @@ Age: 26
                 </code>
             </p>
             <p>
-                <span class="callout">The important mark up <strong>must</strong> only be used in specific
+                <span class="callout">&#128161;The important mark up <strong>must</strong> only be used in specific
                     cenarios.</span>
             </p>
 
@@ -1597,6 +1598,37 @@ Age: 26
             <p>The higher number the higher the specificity;</p>
 
             <h4>Order of appearance</h4>
+            <p>If two set of rules for a set element conflict and they have the same origin and specificity, the order
+                of appearance will define which rule will be applied, being the <strong>last</strong> one the applied.
+            </p>
+
+            <h3>@import</h3>
+            <p>Allows the author to import style rules from other style sheets and you can create a more clean document
+                when instead of puting a bunch of stylesheets in the HTML file, you can link to just one file and inside
+                that file import all the others.
+                <br>
+                Example:
+            </p>
+            <code>
+                <pre>
+                    HTML FILE:
+                    <link rel="stylesheet" href="style.css"
+
+                    STYLE.CSS FILE:
+                    @import 'styles.css';
+                    @import 'styles2.css';
+                </pre>
+            </code>
+            <p>The @import will search for those files and "replace" the @import with it's content</p>
+            <p>
+                <span class="callout">&#128161; The @import element <strong>must</strong> always be before of any other
+                    css rule, otherwise it won't be read</span>
+            </p>
+
+            <h3>Cascade Layers</h3>
+            <p>It's something new not well supported by the different browsers</p>
+
+
 
         </section>
 
