@@ -1521,11 +1521,82 @@ Age: 26
             <p>To "find" a pseudo-elements you always use double : </p>
 
             <h3>The Cascade</h3>
-            <p></p>
+            <p>
+                <span class="callout">The Cascade means that after the declarations have been sorted (put in the right
+                    order), the one that will be applied is the top one and the bellow will be ignored.</span>
+                <br>
+                This order takes into consideration:
+            <ol>
+                <li>Origin</li>
+                <li>Importance</li>
+                <li>Specificity</li>
+                <li>Order of Appareance</li>
+            </ol>
+            </p>
 
+            <h4>Origin</h4>
+            <p>Besides the multiple stylesheet that the author can create, the user agent also have its own stylesheet.
+                <br>
+                Talking about the <strong>origin</strong> of the declarations, the <strong>author</strong> declaration
+                will always be prioritize over the user agent declaration <strong>(if the user declaration is not marked
+                    up as important</strong>)
+                <br>
 
+            <h4>Importance</h4>
+            <p>
+            <ol>
+                <li>Important user agent declarations</li>
+                <li>Important author declarations</li>
+                <li>Normal author declarations</li>
+                <li>Normal user declarations</li>
+            </ol>
+            <br>
+            If the <strong>user agent</strong> marks something as important there's nothing the author can do.
+            <br>
+            The way that you can mark something as important is putting "!important" after the declarations.
+            <br>
+            Like this:
+            </p>
+            <p>
+                <code>
+                    <pre>
+                        h2 {
+                            font-weight: bold !important;
+                        }
+                    </pre>
+                </code>
+            </p>
+            <p>
+                <span class="callout">The important mark up <strong>must</strong> only be used in specific
+                    cenarios.</span>
+            </p>
 
+            <h4>Specificity</h4>
+            <p>Each selector has a specificity number, that's defined by:
+            <ol>
+                <li>Number of ID selectors in the selector</li>
+                <li>Number of class, attributes and pseudo-classes in the selector</li>
+                <li>Number of type selectors and pseudo-elements in the selector</li>
+                <li>Ignore the universal selector</li>
+            </ol>
+            To discover the specifity number you have to count the 3 first options.
+            <br>
+            Example:
+            </p>
+            <code>
+                <pre>
+                    #skills   100 (has one ID (1), there isn't any class, attribute or pseudo class (0) and there isn't any type selector or pseudo-element (0));
 
+                    #skills .resume-list 110 (has one ID (1), one class (1) and there isn't any type selector (0));
+
+                    .skills 010 (there isn't ID (0), has a class (1) e there isn't any type or pseudo-element (0));
+
+                    section.skills 011 (there's no ID (0), has one class (1) and one type selector (1))
+                </pre>
+            </code>
+            <p>The higher number the higher the specificity;</p>
+
+            <h4>Order of appearance</h4>
 
         </section>
 
