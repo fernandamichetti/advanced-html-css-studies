@@ -116,7 +116,7 @@
             </p>
 
             <pre>
-                    <code>
+            <code>
                         &lt;h1&gt;My name is Fernanda&lt;/h1&gt; //you're saying to the computer that this is the MOST important part of the
                 document
                         </code>
@@ -916,6 +916,7 @@
             </p>
             <p>Example:</p>
             <p>1. Wrong use of the <code>&lt;br&gt;</code> tag:</p>
+
             <pre>
                 <code>
 &lt;p&gt;
@@ -1129,7 +1130,7 @@ Age: 26
                     because even though all screen reader should work with implicit label/input, some just won't play
                     nice with it.</span>
             </p>
-            <p>
+
             <pre>
                                 <code>
                                     &lt;form&gt; !--The action attribute specifies where the form should be send once its
@@ -1139,9 +1140,9 @@ Age: 26
                                     &lt;input type=&quot;text&quot; name=&quot;name&quot; id=&quot;nameUser&quot;/&gt;
                                     &lt;/p&gt;
                                     &lt;/form&gt;
+                                </code>
                             </pre>
-            </code>
-            </p>
+
             <form action="#">
                 <p>
                     <label for="nameUser">Nome</label>
@@ -1304,17 +1305,14 @@ Age: 26
                 are descendants from the element A.
             </p>
             <p>
-                Example:
-                <code>
-        <pre>
+                Example:</p>
+            <pre>
+            <code>
             h1 strong { color: red;}
 
             &lt;h1&gt; This headline is &lt;strong&gt;very&lt;/strong&gt; importante&lt;h1&gt;
-        </pre>
-    </code>
-                <br>
-            </p>
-
+        </code>
+    </pre>
             <p>
                 <span class="callout">&#128161; When we say <strong>descendant of</strong> we're looking for
                     <strong>any</strong> ancestor, not just the immediate parent </span>
@@ -1324,8 +1322,9 @@ Age: 26
             <p class="test">When you want to select the directly below element of another you use &gt;</p>
 
             <p>Example:
-                <code>
-                    <pre>
+            </p>
+            <pre>
+            <code>
                         h3 > p {
                             font-size: 20px;
                         }
@@ -1333,22 +1332,21 @@ Age: 26
                         div ol>li p {
                             font-size: 10px;
                         }
-                    </pre>
-                </code>
-            </p>
+                    </code>
+                </pre>
 
             <h3>Combinators: Next-Sibiling</h3>
             <p>You can select the<strong> next</strong> sibiling of a element using +. </p>
             <p>Example:
+            </p>
 
-                <code>
-                    <pre>
+            <pre>
+            <code>
                         ul + p {
                             font-size: 20px;
                         }
-                    </pre>
-                </code>
-            </p>
+                    </code>
+                </pre>
 
             <h3>Combinators: Subsequent-Sibiling</h3>
             <p>
@@ -1357,12 +1355,12 @@ Age: 26
 
             <p>
                 Example:
-                <code>
-                    <pre>
-                        p ~ ol
-                    </pre>
-                </code>
             </p>
+            <pre>
+            <code>
+                        p ~ ol
+                    </code>
+                </pre>
 
             <h3>Pseudo-class</h3>
             <p>Selection based on information that lies outside the document tree - It means that instead of the author
@@ -1385,19 +1383,20 @@ Age: 26
             <p>The sintax is element:nth-child(An-B) which means you take the results for the element, divides them into
                 groups of An and selects the B of each group
             </p>
-            <p>
-                <code>
-                        <pre>
+            <pre>
+            <code>
                             li:nth-child(2n+2) {
                                 color: red;
                             }
-                        </pre>
-                    </code>
-            </p>
+                        </code>
+                    </pre>
             <p>
-                <span class="callout">&#128161; It's based on the position in the parent container so if there's a code:
-                    <code>
-                        <pre>
+                <span class="callout">&#128161; It's based on the position in the parent container so if there's a
+                    code:</span>
+            </p>
+
+            <pre>
+            <code>
                         style {
                         p:nth-child(2n - 1) {
                         color red
@@ -1409,12 +1408,13 @@ Age: 26
                         &lt;p&gt; Line 1 &lt;/p&gt;
                         &lt;p&gt; Line 2 &lt;/p&gt;
                         &lt;/div&gt;
-                        </pre>
                     </code>
-                    Just the <strong>Second line</strong> will be red, because the first element of the first group is
-                    the <code>&lt;h2&gt;</code> element.
-                </span>
+                </pre>
+            <p>
+                Just the <strong>Second line</strong> will be red, because the first element of the first group is
+                the <code>&lt;h2&gt;</code> element.
             </p>
+
             <p class="comment">
                 If there's a list with 3 elements they will be divided into groups of two, one with the 2 firsts
                 elements and the other with the third element. As just the second element of each group will have the
@@ -1422,37 +1422,36 @@ Age: 26
             </p>
             <p>Since even and odd are so commonly instead of creating a mathematic rule you can just type even/odd for
                 the same effect</p>
-            <p>
-                <code>
-                    <pre>
+
+            <pre>
+            <code>
                         li:nth-child(even)
-                    </pre>
-                </code>
-            </p>
+                    </code>
+                </pre>
+
             <p>It's also possible to just choose to apply a style to the first x elements with:</p>
-            <p>
+
+            <pre>
                 <code>
-                    <pre>
                         li:nth-child(-n+3)
                     </pre>
-                </code>
-            </p>
+            </code>
+
             <p>Or apply just for the x element:</p>
-            <p>
-                <code>
-                    <pre>
+
+            <pre>
+            <code>
                         li:nth-child(7)
-                    </pre>
-                </code>
-            </p>
+                    </code>
+                </pre>
+
             <p>It's possible to also choose a range of elements, from the x to the y the style must be applied:</p>
-            <p>
-                <code>
-                    <pre>
+
+            <pre>
+            <code>
                         li:nth-child(n+8):nth-child(-n+15)
-                    </pre>
-                </code>
-            </p>
+                    </code>
+                </pre>
 
             <h5>:nth-last-child(An+B)</h5>
             <p>
@@ -1492,15 +1491,15 @@ Age: 26
 
             <h4>Negation (Matches None) Pseudo-Class</h4>
             <p>Finds elements that are <strong>not</strong> something</p>
-            <p>
-                <code>
-                    <pre>
+
+            <pre>
+            <code>
                         section:not(#section1) {
                             font-style: italic;
                         }
-                    </pre>
-                </code>
-            </p>
+                    </code>
+                </pre>
+
             <p>It will style all the sections, except the section with the ID section1 with a italic style</p>
 
             <h3>Pseudo-elements</h3>
@@ -1509,15 +1508,15 @@ Age: 26
                 <br>
                 Example:
             </p>
-            <p>
-                <code>
-                    <pre>
+
+            <pre>
+            <code>
                         p::first-letter {
                             font-weight: bold;
                         }
-                    </pre>
-                </code>
-            </p>
+                    </code>
+                </pre>
+
             <p>To "find" a pseudo-elements you always use double : </p>
 
             <h3>The Cascade</h3>
@@ -1558,15 +1557,15 @@ Age: 26
             <br>
             Like this:
             </p>
-            <p>
-                <code>
-                    <pre>
+
+            <pre>
+            <code>
                         h2 {
                             font-weight: bold !important;
                         }
-                    </pre>
-                </code>
-            </p>
+                    </code>
+                </pre>
+
             <p>
                 <span class="callout">&#128161;The important mark up <strong>must</strong> only be used in specific
                     cenarios.</span>
@@ -1584,8 +1583,9 @@ Age: 26
             <br>
             Example:
             </p>
+
+            <pre>
             <code>
-                <pre>
                     #skills   100 (has one ID (1), there isn't any class, attribute or pseudo class (0) and there isn't any type selector or pseudo-element (0));
 
                     #skills .resume-list 110 (has one ID (1), one class (1) and there isn't any type selector (0));
@@ -1593,8 +1593,9 @@ Age: 26
                     .skills 010 (there isn't ID (0), has a class (1) e there isn't any type or pseudo-element (0));
 
                     section.skills 011 (there's no ID (0), has one class (1) and one type selector (1))
-                </pre>
-            </code>
+                </code>
+            </pre>
+
             <p>The higher number the higher the specificity;</p>
 
             <h4>Order of appearance</h4>
@@ -1609,16 +1610,18 @@ Age: 26
                 <br>
                 Example:
             </p>
-            <code>
-                <pre>
-                    HTML FILE:
-                    <link rel="stylesheet" href="style.css"
 
-                    STYLE.CSS FILE:
+            <pre>
+            <code>
+                    HTML FILE:
+                    &lt;link rel="stylesheet" href="style.css";&gt;
+
+                    STYLE CSS FILE:
                     @import 'styles.css';
                     @import 'styles2.css';
-                </pre>
-            </code>
+                </code>
+            </pre>
+
             <p>The @import will search for those files and "replace" the @import with it's content</p>
             <p>
                 <span class="callout">&#128161; The @import element <strong>must</strong> always be before of any other
@@ -1626,9 +1629,43 @@ Age: 26
             </p>
 
             <h3>Cascade Layers</h3>
-            <p>It's something new not well supported by the different browsers</p>
+            <p>It's something new not well supported by the different browsers.
+                <br>
+                More into: <a href="https://css-tricks.com/css-cascade-layers/">A Complete Guide to CSS Cascade
+                    Layers</a>
+            </p>
 
+            <h3>Inherit, initial and specified values</h3>
+            <p><strong>Inheritance</strong> means that a element may not receive a value from a declaration, but inherit
+                it from a ancestor, but if that doesn't work, each property have an <strong>initial value</strong>.
+                <br>
+                A <strong>initial value</strong> is what the property's value will be initially, when it didn't inhrit
+                from another element and didn't have it declared.
+                <br>
+                If you don't want a element to inherit a property, but actually use its initial value you can set the
+                value to "initial".
+            </p>
 
+            <pre>
+            <code>
+                ul { font-weight: bold;}
+
+                li { font-weight: initial;}
+            </code>
+            </pre>
+
+            <p>
+                <span class="callout">&#128161; Not <strong>all</strong> properties can be inherited by default, but
+                    even if a property is not inherited you can set the value to be.</span>
+            </p>
+
+            <pre>
+            <code>
+                ul {outline: solid 1px red; }
+
+                li { outline: inherit;}
+            </code>
+        </pre>
 
         </section>
 
