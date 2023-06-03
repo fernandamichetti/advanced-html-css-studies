@@ -1611,6 +1611,43 @@ Age: 26
 
             <p>It will style all the sections, except the section with the ID section1 with a italic style</p>
 
+            <h3> Matches-any pseudo class - :is</h3>
+            <p>You can give a list of selectors and it will select <strong>any</strong> element that can be selected by one of the selectors in the list</p>
+            <p>Instead of using:
+            </p>
+            <pre>
+                <code>
+                    ul.resume-list li {
+                        outline: solid 1px red;
+
+                        ol li {
+                            outline: solid 1px red;
+                        }
+                    }
+                </code>
+            </pre>
+            <p>You can write:
+            </p>
+
+            <pre>
+                <code>
+                    :is(ul.resume-list, ol) li {
+                        outline: solid 1px red;
+                    }
+                </code>
+            </pre>
+            <p>That way what you´re saying is: Find all the li that are descendent from ul with the class resume-list <strong>OR</strong> li that are descendent from ol</p>
+            <p>
+                <span class="callout">&#128161; The specificity of the selector will be of its most specific argument, in the case above, the specificity of ul.resume-list</span>
+            </p>
+
+            <h3>Specificity-adjustment pseudo-class - :where</h3>
+            <p>It works exactly the same as the matches-any pseudo class, the different is that what´s inside the parentesis of the :where pseudo-class, doesn´t change the specificity of the selector - the specifity is <strong>always</strong> be zero</p>
+
+            <p>
+                <span class="callout">&#128161;This is useful for introducing filters in a selector while keeping the associated style declaration easy to override.</span>
+            </p>
+
             <h3>Pseudo-elements</h3>
             <p>Basically elements in the document that haven't been marked up as elements. For example there's the
                 pseudo-elements "first-letter", there isn't a tag that says it, but you can style it.
@@ -1776,6 +1813,8 @@ Age: 26
             </code>
         </pre>
 
+        <h3>Optimization</h3>
+        <p>It's important to remember that the browser will always read the selectors from right to left. Being the <strong>key selector</strong> always the last one (right). Keeping that in mind will make large pages download faster, optimizing the visualization of the page!</p>
         </section>
 
     </main>
